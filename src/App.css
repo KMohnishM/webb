@@ -1,0 +1,270 @@
+/* App.css */
+
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  /* background-image: url("../public/andre-francois-mckenzie-JrjhtBJ-pGU-unsplash.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+}
+
+/* Container for the app */
+div {
+  max-width: 1200px;    
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+.marg{
+  margin-top: 10px; 
+}
+/* Header */
+h1 {
+  text-align: center;
+  color: #000000;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  background-color: #18f4e2d1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input:hover{
+  background-color: rgba(172, 255, 47, 0.593);
+}
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button[type="button"] {
+  background-color: #f1c40f;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Investment List */
+h2 {
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+  color: black;
+  margin-top: 20px;
+}
+
+/* Company List */
+ul > li > ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul > li > ul > li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  form {
+      padding: 15px;
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+
+.company-details-container {
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.company-details-container:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+.company-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Darker text for title */
+  margin-bottom: 10px;
+}
+
+.company-info {
+  font-size: 16px;
+  color: #555; /* Medium text color */
+  margin-bottom: 8px;
+  line-height: 1.6; /* Spacing between lines */
+}
+
+.company-highlight {
+  font-weight: bold;
+  color: #FF5722; /* Highlighted text (e.g., valuation or price) */
+}
+.company-details-container {
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background */
+}
+
+.company-details-content {
+  display: flex; /* Arrange logo and content side-by-side */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.company-logo {
+  margin-right: 20px; /* Space between logo and details */
+}
+
+.logo-image {
+  width: 80px; /* Set logo width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners for the logo */
+  border: 1px solid #ddd; /* Optional: thin border around logo */
+}
+
+.company-info-container {
+  flex: 1; /* Allow content to take remaining space */
+}
+
+.company-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Darker text for title */
+  margin-bottom: 10px;
+}
+
+.company-info {
+  font-size: 16px;
+  color: #555; /* Medium text color */
+  margin-bottom: 8px;
+  line-height: 1.6; /* Spacing between lines */
+}
+
+.company-highlight {
+  font-weight: bold;
+  color: #FF5722; /* Highlighted text (e.g., valuation or price) */
+}
+
+.company-details-container {
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.company-details-content {
+  display: flex; /* Side-by-side layout */
+  align-items: flex-start;
+}
+
+.company-logo {
+  margin-right: 20px; /* Space between logo and details */
+}
+
+.logo-image {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+  border: 1px solid #ddd; /* Thin border */
+}
+
+.company-info-container {
+  flex: 1; /* Allow details to take remaining space */
+}
+
+.company-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.company-info {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.company-highlight {
+  font-weight: bold;
+  color: #FF5722; /* Highlighted text */
+}
+
